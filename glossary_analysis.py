@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analyse a manually compiled RSI glossary against an annotated Q&A.
+"""Analyse a manually compiled interpreting glossary against an annotated Q&A.
 
 Term selection and transcript checking stay outside the script. This file only
 handles the repeatable part: joining the two frozen CSV files, calculating the
@@ -35,7 +35,7 @@ QANDA_REQUIRED = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Evaluate an expert RSI glossary against Q&A terminology."
+        description="Evaluate an expert glossary against Q&A terminology."
     )
     parser.add_argument("--candidates", required=True, type=Path)
     parser.add_argument("--qanda", required=True, type=Path)
