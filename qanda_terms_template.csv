@@ -1,0 +1,5 @@
+term_id,canonical_term,qanda_count,asr_verified
+qmsr,Quality Management System Regulation,7,yes
+iso_13485,ISO 13485,5,yes
+finished_device,finished device,2,yes
+manufacturer_inspection,manufacturer inspection,3,yes
