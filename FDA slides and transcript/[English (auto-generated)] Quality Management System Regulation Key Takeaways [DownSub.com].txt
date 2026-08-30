@@ -1,0 +1,848 @@
+Hello everyone and welcome to today's
+CDR webinar. Thanks for joining us. This
+is Captain Kim Bermadio of United States
+Public Health Service and I serve as the
+education program administrator in the
+division of industry and consumer
+education within CDR. I'll be the
+moderator for today. For this webinar,
+we will be highlighting key takeaways of
+the quality management system regulation
+or QMSR and address frequently asked
+questions regarding this topic. I'd now
+like to introduce our panelists.
+Kesha Thomas, associate director for
+compliance and quality in CDR's office
+of product evaluation and quality.
+Karen Maisley Joseph, senior adviser in
+the office of medical devices and
+radiological health within FDA's office
+of inspections and investigations.
+Tanya Wilbon, assistant director for
+postmarket industry education and
+consumer education in the division of
+industry and consumer education in CDR.
+Joseph Tardle, deputy division director
+of the division of industry and consumer
+education in CDR.
+and Captain Kimberly Luwendowski Walker,
+regulatory officer on the FDA
+inspections and regulatory audits team
+in the office of regulatory programs in
+the office of product evaluation and
+quality in CDR.
+Thank you all for joining today. We'll
+begin with the presentation from Tanya
+and then have a moderated panel
+discussion with frequently asked
+questions about the QMSR.
+Before I turn it over to Tanya, I'd like
+to provide a few reminders.
+First, the intended audience for this
+webinar is industry. National media and
+press members are encouraged to submit
+their questions through the FDA newsroom
+at www.fda.gov/news-events-newsroom.
+Second, we will not be taking questions
+from our attendees today. Therefore,
+please refrain from raising your hand in
+Teams.
+And lastly, for those of you who might
+want to follow along, you may access
+printable slides of today's presentation
+from CDRlearn at
+www.fda.gov/training/cdrhlearn
+under the section titled postmarket
+activities subsection quality management
+system regulation. Again, thank you all
+for joining us today. I'll now turn it
+over to Tanya.
+>> Thank you, Kimberly.
+As previously mentioned, today's
+discussion will focus on key takeaways
+of the quality management system
+regulation or QMR, including answers to
+several questions received in general
+and based on two modules currently
+posted on the FDA CDRAN web page that
+are titled overview of the quality
+management system regulation and
+navigating the quality quality
+management system regulation.
+Before we begin the discussion, I will
+review few QMSR key takeaways. The final
+rule that issued February 2nd, 2024
+amends the quality system regulation
+codified at 21 code of federal
+regulations part 820. You can find the
+complete rule on the federalregister.gov
+gov website and by typing in the search
+box medical devices quality system
+regulation amendments. The QMSR aligns
+our requirements with the international
+consensus standard for medical devices
+to continue to promote consistency in
+the regulation of these devices. This
+regulation becomes effective on February
+2nd, 2026, allowing manufacturers
+approximately 2 years to transition
+their quality systems to meet the
+requirements of the QMR.
+It incorporates by reference two key
+international standards ISO 1345
+2016 English version which specifies
+requirements for a quality management
+system and clause 3 of ISO 900 20165
+English version which provides the
+fundamental vocabulary for quality
+management systems.
+Another QMR key takeaway is that the
+final rule establishes a clear hierarchy
+for how definitions will be applied
+under the new QMR.
+All definitions in section 2011 of the
+Federal Food Drug and Cosmetics Act, the
+FDNC Act, apply. And these definitions
+supersede those correlating terms and
+definitions found in ISO 1345
+2016 and clause 3 of ISO 9000 2015.
+When there are conflicts or differences
+in terminology, definitions in the FDNC
+act take precedence followed by terms
+defined in the QMR than other existing
+FDA regulations
+to support implementation of the final
+rule. FDA will revise or develop
+relevant policies, procedures,
+inspection processes, and other
+regulatory documents that are impacted
+by this rulemaking.
+This includes updates to FDA compliance
+programs, guidance documents, and
+internal operating documents such as
+standard operating procedures, work
+instructions, and templates.
+Collectively, these updates are intended
+to ensure consistency in FDA oversight
+and to provide clarity for manufacturers
+as they transition to and maintain
+compliance with the QMR.
+The QMR applies to all finished devices
+intended for human use that are
+regulated by the FDA. In addition, QMSR
+applies not only to traditional device
+manufacturers, but also to entities that
+perform certain manufacturing related
+functions. Examples of these functions
+include contract sterilization,
+device installation, reabeling, and
+specification development. As a result,
+organizations performing any of these
+activities are considered manufacturers
+under FDA regulations and are expected
+to establish and maintain a compliant
+quality management system appropriate to
+their role in the device life cycle.
+An additional QMR key takeaway is that
+the key requirements of the QMR are
+included in six sections of 21 CFR part
+820. Section 820.1
+defines the scope of the regulation.
+Section 820.3
+provides definitions. Section 820.7
+addresses incorporation by reference
+formally incorporating ISO 1345
+2016 and clause 3 of ISO 9000 2015 into
+the QMR.
+Section 820.10
+specifies the requirements for a quality
+management system and sections 820.35
+and 820.45 45 includes additional
+requirements for control of records and
+device labeling and packaging controls.
+The scope of the QMR addresses the
+applicability of the QMR. Specifically,
+it applies to all finished devices
+intended for human use. It includes
+requirements for addressing any
+potential conflicts with other
+requirements under the FDNC act or
+conflicts with clauses in the ISO 1345
+2016 standard and the FDNC act or other
+FDA regulations.
+The scope includes requirements
+pertaining to the refusal of admission
+of devices imported or offered for
+import by foreign manufacturers and
+includes the criteria for exemptions or
+variances from requirements within the
+QMSR.
+A key takeaway is that the scope of the
+QMR is not that different than the scope
+of the current QS regulation.
+Yet another QMR key takeaway is that the
+QMR governs the methods used in and the
+facilities and controls used for the
+design, manufacture, packaging,
+labeling, storage, installation and
+servicing of all finished devices
+intended for humans. So basically all
+activities needed and involved with
+finished devices intended for human use.
+A few more QMR key takeaways are that
+the QMR ensures the ability to
+consistently manufacture devices that
+meet applicable regulatory requirements
+and device specifications.
+It provides a framework for achieving
+quality throughout the organization.
+Similar to the QS regulation in general,
+it does not specifically tell
+manufacturers how to implement
+requirements to achieve quality, but
+provides this basic framework. The QMR
+assures that finished devices will be
+safe and effective and comply with the
+FDNC act.
+The next few slides provide a few more
+QMR key takeaways about the QMSR
+requirements for a quality management
+system.
+Requirements for a quality management
+system are included in section 820.10
+of the QMR.
+Section 820.10 10 specifies requirements
+for documenting a quality management
+system that complies with applicable
+requirements of ISO 13485
+2016
+and for complying with other applicable
+regulatory requirements to ensure full
+compliance with the listed ISO 1345
+clause.
+Other applicable requirements listed
+include, but are not limited to,
+complying with part 830,
+unique device identification,
+part 821, medical device tracking
+requirements, part 803, medical device
+reporting, and part 806 medical device
+reports of corrections and removals.
+Again, these may not be the only other
+regulatory requirements that are
+applicable to ensure full compliance
+with ISO 1345
+2016.
+Section 820.10 10 of the QMR also
+specifies requirements for complying
+with design and development requirements
+of clause 7.3 of ISO 1345
+2016
+and requirements for devices that
+support or sustain life according to
+traceability for implantable devices of
+clause 7.5.9.2
+2 of the ISO 1345 2016 standard. It
+specifically requires that manufacturers
+of CL of class 2 and class 3 devices and
+the specific class one devices listed in
+820.10
+C1 and table 1 of C2 comply with design
+and development requirements similar to
+the QS regulation. Section 820.10
+also specifies that adulterated devices
+as well as the person responsible for
+the adulteration is subject to
+regulatory action. A device is
+considered adulterated under section
+501H of the FDNC act if it fails to
+comply with any applicable requirement
+of part 820.
+The QMSR includes additional
+requirements for control of records as
+required by clause 4.2.5
+of ISO 1345
+2016
+and control of production and service
+provisions required by clause 7.5.1 of
+ISO 1345 2016.
+These additional requirements are
+included in section 820.35
+control of records of the QMSR and
+section 820.45
+for device labeling and packaging
+controls of the QMR.
+A key takeaway for the requirements for
+control of records is that they include
+additional requirements for specific
+information that must be included in
+various types of records such as records
+of complaints and records of servicing
+activities to ensure consistency and
+compliance with other parts of the FDNC
+act. A key takeaway for the additional
+requirements for device labeling and
+packaging controls include requirements
+for documenting and maintaining detailed
+procedures for both labeling and
+packaging, including requirements for
+rigorous examination of labeling and
+packaging for accuracy and completeness
+before any products are released or
+stored.
+Now there are two additional modules
+that are related to today's QMR topics
+for discussion currently posted on CDR
+learn webpage titled risk management
+risk based approach and riskbased
+decisions and design and development.
+These modules are located under the
+postmarket activity section of the CDR
+learn webpage.
+I now turn it back to Kimberly Permatio
+to begin the discussion.
+Thanks Tanya for that presentation. We
+will now transition to our moderated
+panel discussion.
+As I mentioned um earlier, for today's
+panel discussion, I'll read a frequently
+asked question regarding our topic and
+then ask a panelist to respond.
+So Kesha, the first question I have I'm
+going to direct to you. And Kesha, that
+question is, where do I access ISO 1345
+um year 2016 and ISO 9000 year 2015?
+>> Yes. Hi Kim, thank you for that
+question. You can uh access ISO 1345
+2016 in the incorporation by reference
+portal as a readonly document. Uh that
+is listed that website is listed where
+you can get it in the final rule. Um but
+it's it's ibr.c.orgstandardis1.aspx.
+The ISO 9000205 standard is available
+for viewing without cost at the ISO
+standards website at www.iso.org.
+Um, and you can look for ISO 9000205
+there.
+>> Thanks, Kesha.
+All right, Karen, I'm going to come to
+you next. The question is, will FDA
+start enforcing the QMSR on February
+2nd, 2016 or sorry, 2026?
+>> Thanks for the question, Kim, and hi
+everybody. Uh, yes, the medical devices
+quality system regulation amendments
+final rule uh was published on February
+2nd, 2024 with an effective date 2 years
+later, which is coming up quickly on
+February 2nd, 2026. So in that final
+rule, it states that the amended
+regulation will be titled the quality
+management system regulation or QMR and
+the QMSR will be effective on February
+2nd, 2026.
+So again, yes, the FDA will begin
+enforcing the QMR requirements on
+February 2nd, 2026.
+Thanks.
+>> Thanks, Karen.
+Okay, Kim, the other Kim, I'm going to
+come to you for our next question. And
+this question has two parts. So, I'll
+read part one and let you respond and
+then I'll read part two and you can
+respond. So, for part one, the question
+is, does having an ISO 1345
+certification mean I'm automatically
+compliant with the QMSR?
+>> Oh, thank you. Excellent question. Uh,
+no. ISO 13485 certification by itself
+does not ensure uh compliance to the
+QMR. Uh manufacturers must uh comply
+with all requirements in the QMR
+any other applicable provisions in the
+in the federal food drug and cosmetic
+act and its implementing regulations.
+FDA will not accept ISO 13485
+certifications
+in lie of conducting our own assessment
+of a manufacturer's compliance with
+quality management system requirements
+during inspections.
+Thanks. And now for part two. So part
+two, the question is, does compliance
+with the QMSR mean that um I'm certified
+to ISO 1345?
+Oh, another great question. Uh, so the
+answer here is no. Uh, FDA inspections
+will not result in the issuance of a
+certificate of conformity to ISO 13485.
+Back to you.
+>> Great. Thanks, Kim. All right, Joe, I'm
+going to come to you with the next
+question, which is, are existing good
+manufacturing practice or GMP exemptions
+set forth by individual classification
+regulations superseded by the QMR?
+>> So, hello all and thank you Kim. The IC
+has seen this question a few times and
+the answer is they are not superseded by
+the QMR.
+Existing good manufacturing practice or
+GMP exemptions remain under the QMR. The
+code of federal the code of federal
+regulations will be updated to reflect
+the quality management system regulation
+and current exemptions continue to
+apply.
+And this is also noted in the new
+medical devices quality management
+system regulation technical amendments
+that were published earlier this month
+and can be found in the Federal
+Register. Back to you, Kim.
+>> Thanks, Joe. All right, our next
+question I'm gonna direct towards Tanya.
+Tanya, the question is, since FDA is
+incorporating by reference ISO 1345
+2016, does that mean that FDA is also
+incorporating by reference additional
+standards referenced in ISO 1345?
+>> Great question, and hello again
+everyone. As previously indicated, of
+course, the QMSR is incorporating by
+reference ISO 1345
+2016 and clause 3 of ISO 9000205.
+Other standards referenced are voluntary
+as usual and FDA does not in this
+rulemaking incorporate any other
+standards referenced by or even listed
+as a source in ISO 1345 such as the ISO
+14971 that is referenced in the ISO 1345
+as a note. So only the um ISO 1345 and
+clause 3 of ISO 9000. Thank you.
+>> Thanks Tanya.
+Okay, Kesha. The next question we have
+is where can I access the final rule for
+the medical devices quality system
+regulation amendments?
+>> Sure. Thank Kim. Currently the final
+rule for QMR is located in the Federal
+Register. So you have to go to the
+federal register site. You can do a
+search for medical devices quality
+management system regulation amendments
+and you will access the final rule
+inclusive of the preamble and all the
+comments there. When the quality
+management system regulation becomes
+effective on February 2nd, 2026,
+the actual codified of the regulation
+will be located in the code of federal
+regulations in 21 CFR part 820 currently
+where the quality system regulation is
+and that will be replaced with the
+quality management system regulation.
+>> Great. Thanks, Kesha.
+All right, for our next question, I'm
+going to go to Karen. Karen, that
+question is, "Will there be a new
+inspection process?"
+>> Yeah, thanks, Kim. This is one of my
+favorite questions and one that I hear a
+lot being from the FDA inspectorate
+office. So, the answer is yes, the FDA
+will have a new inspection process, and
+that process will be aligned with the
+requirements of the QMSR uh on February
+2nd, 2026. the current inspection
+process which is currently known as the
+quality system inspection technique or
+CQIT uh CQIT will be withdrawn and FDA
+will implement the new QMR aligned
+inspection process. So thanks for the
+question.
+>> Thanks Karen.
+Okay, the next question I'm going to
+direct to Kim. Kim, that question is,
+now that FDA has incorporated by
+reference ISO 1345
+2016,
+what happens if the standard is revised?
+>> Thank you for that. Um, so the FDA will
+evaluate any future revisions to the
+standard to uh determine the impact of
+any changes and whether we need to amend
+the QMSR.
+If appropriate, amendments to the QMR
+will be implemented through the
+rulemaking process. The good news is is
+that ISO officially confirmed the 2016
+version of the standard for another 5
+years. So therefore, ISO 13485
+2016 will not be revised until at least
+April of 2030. Excellent question. Thank
+you for that.
+Thanks, Kim.
+Next up, uh Joe, the question I'm going
+to direct towards you is, "Are specific
+labeling requirements set forth in the
+previous QS regulation maintained in the
+QMSR?"
+>> Thanks, Kim. The QMSR retains specific
+labeling and packaging requirements from
+the quality system regulation. These
+include examining the label to ensure it
+contains accurate unique device
+identifiers, UDI, or universal product
+code, UPC,
+expiration dates, storage instructions,
+handling instructions, and any
+additional processing instructions.
+Manufacturers must document procedures
+to ensure labeling accuracy and prevent
+mixups during packaging operations.
+Thanks, Kim.
+>> Thanks, Joe.
+Okay, for our next question, I'm going
+to direct that to Tanya. Tanya, the
+question is, the QMR specific specifies
+requirements for inspection of labeling
+and packaging prior to a release or use.
+Is manual inspection required or can
+automated method be used?
+>> Thank you, Kim. Yes, another great
+question. And as mentioned um as a QMSR
+takeaway, FDA included additional
+requirements for labeling and packaging
+devices in 820.45
+that were not specifically addressed in
+ISO 1345 2016.
+FDA retained the requirements to inspect
+labeling and packaging for accuracy
+before use. document the inspection and
+release of the labeling to ensure that
+all devices have correct labeling and
+packaging and to prevent errors. So the
+requirement to inspect labeling and
+packaging does not preclude automatic
+readers where the process is followed by
+human oversight.
+FDA further clarifies that a designated
+individual though must examine at a
+minimum a representative sample of all
+labels that have been checked by
+automated readers. So that was a great
+question. Thank you.
+>> Thanks Tanya.
+Okay, the next question I am going to
+direct to Kesha. Kesha, that question
+is, "What does reserved mean in the QMR
+regulation?"
+>> Thanks, Kim. This is a really good
+question. Um, I'm sure people who read
+the QMR so far have noticed that listed
+within the I think it's a CFR, might be
+in the the actual rule itself, there are
+sections that are that are denoted as
+reserved. Reserved is a placeholder term
+used in the Code of Federal Regulations
+to indicate that the FDA may insert
+regulatory information into that
+location in the future. What it means is
+it was intentionally left empty right
+now so that we did not use it currently.
+It also indicates that a portion of the
+code of federal regulations will be
+intentionally left empty and not
+accidentally omitted due to printing or
+computer errors. So we have seen this
+question a multitude of times regarding
+what reserve means. That just means
+we're not using that specific site and
+that site is being reserved for either
+use in the future or intentionally left
+empty.
+>> Thanks Kesha. Very important there.
+Okay, for the next question, I'm going
+to direct it to Karen. Karen, the
+question is, "Where do I find
+information about the new inspection
+process for QMR?"
+>> Yeah, thanks, Kim. Happy to answer that
+one. And thanks for another great
+question related to inspections. uh the
+QMSR inspection process, it will be
+documented in a revised version of the
+compliance program which is titled
+inspection of medical device
+manufacturers. Uh this revised
+compliance program will be effective on
+February 2nd, 2026 and it will be
+available on the center for devices and
+radiological health compliance program
+FDA web page. So that's the CDR
+compliance program web page at fda.gov
+And that's it. Back to you, Kim.
+>> Thanks, Karen.
+Okay, so for our next question, I'm
+going to direct that to Kim. And Kim,
+the question is, how does the QMR impact
+combination products?
+>> Oh, thank you for that. Uh, so the QMSR
+does include conforming edits to part 4,
+which is 21 CFR part 4 for combination
+products. Um, it should be noted that
+these changes do not impact the current
+good manufacturing practice requirements
+for combination products. Thank you.
+>> Thank you for that clarification.
+All right, Joe. The next question we
+have is, do manufacturers retain their
+flexibility under the QMSR regarding
+their quality management systems?
+>> So, thanks Kim for that question. One of
+the things that I love about the quality
+system regulation and now is retained in
+the QMSR is that we retain that scope
+allowing manufacturers that flexibility
+in designing their quality management
+system. They own it and they need to
+meet the requirements in the regulation.
+But they have the flexibility in
+designing that system based on factors
+such as what type of device it is, what
+is the risk of that device, what's the
+complexity of the device, what are the
+manufacturing processes, what are the
+risk and complexities of those
+manufacturing processes and of course
+the size and makeup of the different
+company. So yes, they get to retain that
+great flexibility and determine what
+suits them best as long as they meet all
+the requirements in the regulation
+itself. So thank you Kim.
+Thanks Joe.
+All right, our next question Tanya I'm
+going to come to you and the question is
+does specific identifying information
+need to appear on each batch or lot of a
+product?
+Yes. Hi, thanks again Kim for another
+great question. And again, as I
+mentioned in the QMSR key takeaways,
+there were additional um requirements
+for control of records, section 820.35
+requires that for each medical device or
+batch of medical devices, the unique
+device identification or the UDI must be
+recorded. This is in addition to
+complying with the requirements of ISO
+1345
+um 2016 standard in clauses 7.5.1,
+clause 7.5.8
+and clause 7.5.9.
+This ensures of course comprehensive
+traceability and accountability for
+every device that is produced. So yes,
+there are some additional um information
+that must be included.
+>> Thank you for that question.
+>> Thanks. Thanks Tanya.
+Okay, I have a few more questions for
+our panel today. Uh the next question
+I'm going to direct towards Joe and Joe,
+the question is how can industry prepare
+for the regulation change?
+>> So thanks Kim. Um, if you had a chance
+to look at the presentation, navigating
+the quality management system
+regulation, it notes a few helpful steps
+in there is that manufacturers can
+identify and understand the regulatory
+changes. So, you need to know what the
+rule and the new rag is, then conduct a
+gap analysis to identify the differences
+and update
+um your quality management system.
+Revise the processes and procedures to
+incorporate those changes. then train
+staff on those revised processes and
+procedures and implement those new
+processes and procedures as well as
+monitor that implementation to make sure
+that this is the implementation that you
+wanted. So hopefully that helps with the
+different manufacturers out there as
+they prepare for this change or as
+they've been preparing for the last two
+years for this change as it becomes
+effective February 2nd.
+Back to you Kim. Thanks Joe.
+Okay, I'm going to come to Tanya next.
+And Tanya, the question that I have for
+you is, are the requirements of 21 CFR
+820.180
+and 820.198
+in the QS regulation still applicable
+under the new QMR?
+>> Thanks again, Kim. So for clarification
+under the quality management system
+regulation or QMSR although general
+requirements concerning records under
+820.180
+and complaint files under 820.198
+are no longer numbered. The requirements
+remained and manufacturers may meet the
+requirements set forth in those sections
+by complying with among other things
+820.35
+for control of records and the records
+and complaint handling portions of ISO
+1345.
+For example, um in the QMR requirements
+for records of complaints can be found
+in 820.35A
+and clause 8.2. 2.2 of ISO 1345 as
+incorporated by reference. So while the
+specific numbering of 820.180
+and 820.198
+are not included in QMSR, those
+requirements are. Thank you again.
+Thanks Tanya.
+Okay, Kesha, the next question I'm going
+to direct towards you, and that question
+is, FDA's response to comment 29 in the
+preamble to the final rule states that
+after consideration, we have included in
+section 820.3
+one definition for batch or lot
+consistent with the definition of these
+terms in section 820.3M
+of the QS regulation.
+Some stakeholders have stated they
+searched the QMR for the terms batch and
+lot but did not find a definition. Will
+this definition be added to the QMSR
+prior to its effective date of February
+2nd, 2026?
+>> Yes. So the preamble accurately states
+the AY's intention. However, we have now
+corrected the misin the missing
+information in the technical correction
+for the medical device quality system
+regulation amendments that was published
+in October of 2024. So, there was an
+admission administrative error and that
+error has been corrected. It is now been
+updated and that technical correction
+actually has the appropriate information
+that was omitted previously.
+Great. Thanks, Kesha. Very helpful.
+For our next question, I'm going to come
+to Kim. And Kim, that question is, is
+there anywhere to obtain a comparison
+between the quality system requirements
+and the QMR?
+>> Oh, thank you for that question. So FDA
+we at FDA we do not have a formal side
+byside comparison between the
+requirements in the quality system
+regulation and the QMR. So as
+manufacturers you would need to perform
+an appropriate gap analysis for your
+system and identify those uh gaps and
+comparative uh sections.
+>> Thanks Kim
+and Joe. We have one last question and
+I'm going to direct that to you and Joe.
+The question is, will an investigational
+device exemption or IDE, which has been
+approved under 21 CFR 812, still require
+compliance with design controls when the
+QMR becomes effective?
+>> So, thanks, Kim. I've seen this question
+come up and I've seen it come up a
+couple different times. The the short
+answer is yes. Idees approved under 21
+CFR812 will be required to comply with
+design and development requirements in
+the QMR. So if if you look through the
+quality system regulation talks about
+design controls. Now in the QMSR we're
+talking about design and development but
+both will
+um be required when you're doing your
+investigational device exemption because
+when you're doing any type of design
+work it's not retrospective. you're
+you're doing it prospectively. So the
+short answer is yes, you're going to
+have those 8 underneath of 812 you'll do
+design and development requirements in
+the QMSR
+um under 21 CFR 820.10C
+which directs manufacturers to the
+requirements set forth in ISO 1345
+clause 7.3. And I hope that that helps
+it clear up that question that that
+comes up. So with that, turning it back
+to you, Kim.
+>> Thank you, Joe. And thank you, Tanya,
+Kesha, Karen, and Kim. Uh, that will
+wrap up our panel discussion for today.
+At this time, I am going to turn it back
+over to Tanya to provide some final
+thoughts regarding today's topic. Tanya.
+>> Okay. Thank you again, Kim, and thank
+you to everyone for joining today's QMR
+key takeaways webinar. I hope you found
+the information very helpful and useful
+as you begin to transition to the QMR.
+I would like to leave you with a call to
+action. I would encourage you to embrace
+a culture of quality and continuous
+efforts of global harmonization.
+Read the 2024 final rule, including the
+preamble, and read and familiarize
+yourselves with the QMR, ISO 1345, 2016
+version, and clause 3 of ISO 9000 2015.
+I would encourage you to conduct a gap
+analysis of your current quality
+management system procedures to identify
+any gaps in meeting regulatory
+requirements.
+And then as another call to action, I
+would encourage you to review additional
+resources available for implementing the
+requirements of the QMR as we've
+mentioned earlier today. Thank you again
+for joining this webinar. And I will now
+turn it back to Kimberly.
+>> Thanks Tanya.
+Before we conclude today's webinar, I
+would like to remind everyone a
+recording of today's webinar and a
+transcript will be posted in the next
+week or so to the webinar event page as
+well as to CDR learn under the section
+titled postmarket activities and the
+subsection quality management system
+regulation. A screenshot of where you
+will be able to find these materials on
+CDRA learn is provided on this slide. If
+you have specific questions about the
+QMSR final rule, feel free to email
+QMSR-ulefa.hhs.gov.
+If you have additional general
+regulatory questions regarding today's
+webinar, feel free to reach out to DICED
+dicict fda.hhs.gov.
+And lastly, I encourage you to monitor
+our CDR events web page for a list of
+upcoming CDR events, including future
+webinars and town halls at
+www.fda.gov/cdrvents.
+Thank you all again for joining us. This
+concludes today's CDR webinar.
