@@ -97,8 +97,8 @@ installed.
 ### 1. Clone the repository and enter its folder
 
 ```bash
-git clone https://github.com/vanot6/rsi-glossary-analysis.git
-cd rsi-glossary-analysis
+git clone https://github.com/vanot6/glossary-analysis.git
+cd glossary-analysis
 ```
 
 If the project was downloaded as a ZIP instead, open Terminal, type `cd ` with
