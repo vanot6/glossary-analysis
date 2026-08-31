@@ -1,71 +1,72 @@
 # FDA QMSR glossary coverage
 
-This repository contains the data and small Python utilities for a corpus-based
-case study of terminology preparation for remote simultaneous interpreting. The
-case is an FDA webinar on the Quality Management System Regulation (QMSR).
+This repo contains the data and Python scripts used for a small corpus-based case study on terminology preparation for remote simultaneous interpreting.
 
-The study asks how much of the specialised terminology used in the moderated
-Q&A was covered by a glossary compiled from the presentation slides before the
-Q&A was examined. It also compares that glossary with 10,000 random selections
-of the same size from the complete slide-derived candidate pool.
+The source event is an FDA webinar on the Quality Management System Regulation (QMSR). I wanted to find out how much of the terminology used during the moderated Q&A could have been prepared in advance using only the presentation slides.
 
-## Research design
+I also compared my 30-term glossary with 10,000 random selections of 30 terms from the same slide-derived candidate pool.
 
-The primary inferential outcome is Q&A term-type coverage. Token coverage is
-reported as a secondary descriptive measure. The one-sided Monte-Carlo test
-uses a fixed seed and asks whether the expert glossary covers more Q&A term
-families than an equally sized random selection from the slides.
+## What the analysis does
 
-The other reported measures are glossary utilisation, material ceiling and
-selection efficiency. The exploratory analysis uses Spearman's rho to relate
-slide dispersion to subsequent Q&A frequency. Terms absent from the slides
-remain in the Q&A denominator and cannot be matched retrospectively.
+The main measure is **term-type coverage**: the percentage of Q&A term families covered by the glossary. Token coverage is included as an additional descriptive measure.
 
-The analysed section begins with “We will now transition to our moderated panel
-discussion” and ends with “that will wrap up our panel discussion for today”.
+The Monte Carlo test checks whether the manually selected glossary covers more Q&A term families than a random selection of the same size. The random seed is fixed, so the results can be reproduced.
 
-## Files
+The script also calculates:
 
-- `fda_qmsr_slides.pdf` — official presentation slides;
-- `transcripts/youtube_auto_transcript.txt` — working ASR transcript;
-- `slide_candidates_input.csv` — frozen candidate pool and glossary selection
-  before frequency counting;
-- `slide_candidates_counted.csv` — final manually checked slide counts used in
-  the analysis;
-- `slide_term_occurrences.csv` — page-level audit of those final counts;
-- `qanda_terms.csv` — independently annotated Q&A term families;
-- `count_slide_terms.py` — preliminary automatic PDF counter;
-- `glossary_analysis.py` — coverage measures, randomisation test, correlation
-  and figures.
+- glossary utilisation;
+- the maximum coverage possible using the slides alone;
+- selection efficiency;
+- the relationship between a term’s distribution across the slides and its later frequency in the Q&A, using Spearman’s rho.
 
-## Preparation of the tables
+Terms that appeared in the Q&A but not in the slides remain in the denominator. In other words, the analysis does not pretend that terms unavailable during preparation could somehow have been selected retrospectively.
 
-The slide candidate pool contains 98 term families. Full forms, abbreviations
-and transparent orthographic variants share a stable `term_id`; nested matches
-are resolved in favour of the longest expression. The 30 glossary entries are
-marked in `selected_in_glossary` before the Q&A data are joined.
+The Q&A section starts with:
 
-The PDF counter was used only as a first pass. Its page-level output was checked
-against the slides. The image on slide 20 contains genuine advance material,
-including the titles of upcoming webinars, but its text is absent from the PDF
-text layer. Twenty-nine image-only term families were therefore entered during
-manual review. Four `FDA` strings found only inside links or email addresses
-were removed. The automatic `QMSR` match inside the contact address was replaced
-by the visible `QMSR` label in the image, which did not change its numerical
-total. A full form followed by its abbreviation counts as one occurrence of the
-same term family.
+> We will now transition to our moderated panel discussion
 
-Q&A terminology was annotated independently. The YouTube transcript served as
-the working representation of the speech, and ASR forms were checked against
-the official FDA transcript. Every row in `qanda_terms.csv` records a positive
-Q&A frequency and a completed ASR check.
+and ends with:
+
+> that will wrap up our panel discussion for today
+
+## Repository contents
+
+- `fda_qmsr_slides.pdf` — official FDA presentation slides
+- `transcripts/youtube_auto_transcript.txt` — working YouTube ASR transcript
+- `slide_candidates_input.csv` — frozen slide-derived candidate pool, including the original glossary selection
+- `slide_candidates_counted.csv` — manually checked slide frequencies used in the final analysis
+- `slide_term_occurrences.csv` — page-level audit of the checked slide counts
+- `qanda_terms.csv` — independently annotated Q&A term families
+- `count_slide_terms.py` — preliminary automatic PDF counter
+- `glossary_analysis.py` — main analysis script
+
+## How the data were prepared
+
+The candidate pool contains 98 term families. Full forms, abbreviations and straightforward spelling variants are grouped under the same stable `term_id`. Where expressions overlap, the longest valid match takes priority.
+
+The 30 terms included in the glossary were marked in `selected_in_glossary` before the Q&A data were added.
+
+The automatic PDF count was only a starting point. I checked its page-level results manually against the slides because the PDF text layer was incomplete.
+
+Slide 20 was the main issue. It contains an image with real advance material, including the titles of upcoming webinars, but none of that text is available in the PDF text layer. I therefore added 29 image-only term families manually.
+
+I also removed four occurrences of `FDA` that appeared only inside hyperlinks or email addresses. One automatic `QMSR` match from the contact address was replaced with the visible `QMSR` label in the image. This correction did not change the total count.
+
+A full term followed immediately by its abbreviation is counted as one occurrence of the same term family.
+
+The Q&A terminology was annotated separately. I used the YouTube ASR transcript as the working version of the spoken text and checked questionable ASR forms against the official FDA transcript. Every entry in `qanda_terms.csv` has a positive Q&A frequency and has been checked against the transcript.
 
 ## Running the analysis
 
-The required packages are listed in `requirements.txt`.
+Install the required packages:
 
 ```bash
 python3 -m pip install -r requirements.txt
+```
+
+Then run:
+
+```bash
 python3 glossary_analysis.py \
   --candidates slide_candidates_counted.csv \
   --qanda qanda_terms.csv \
@@ -74,11 +75,16 @@ python3 glossary_analysis.py \
   --seed 2026
 ```
 
-The output directory contains the summary in CSV and JSON form, the joined
-term-level table, all randomisation scores and two figures.
+The output directory will contain:
 
-The preliminary PDF count can be reproduced separately without overwriting the
-manually reviewed research data:
+- summaries in CSV and JSON format;
+- the joined term-level dataset;
+- all 10,000 randomisation scores;
+- two figures.
+
+## Reproducing the automatic slide count
+
+The preliminary PDF count can be run separately:
 
 ```bash
 python3 count_slide_terms.py \
@@ -88,9 +94,10 @@ python3 count_slide_terms.py \
   --audit slide_term_occurrences_automatic.csv
 ```
 
-The automatic files are diagnostic outputs, not substitutes for the checked
-`slide_candidates_counted.csv` and `slide_term_occurrences.csv` committed here.
+This creates new diagnostic files and does not overwrite the manually checked data.
 
-This is a single-event case study. It evaluates the usefulness of one set of
-advance materials and one glossary; it does not measure interpreting quality,
-cognitive load or interpreter performance.
+The automatic outputs should not be used instead of `slide_candidates_counted.csv` and `slide_term_occurrences.csv`. The checked files are the ones used for the reported results.
+
+## Scope
+
+This is a case study of one webinar, one set of advance materials and one glossary. It looks at terminology coverage only. It does not attempt to measure interpreting quality, cognitive load or the interpreter’s overall performance.
