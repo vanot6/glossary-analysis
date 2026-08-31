@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Count predefined terminology in a slide PDF, page by page.
+"""Produce preliminary automatic counts for predefined slide terminology.
 
 This script does not discover terms. It takes a candidate list that has already
 been compiled by the researcher and fills in slide_count and slide_dispersion.
-An audit CSV records every page on which a term was found.
+An audit CSV records every page on which a term was found. The output still
+requires manual checking for image-only text and false matches in links.
 """
 
 from __future__ import annotations
@@ -25,10 +26,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--slides", required=True, type=Path)
     parser.add_argument("--candidates", required=True, type=Path)
     parser.add_argument(
-        "--output", default=Path("slide_candidates_counted.csv"), type=Path
+        "--output", default=Path("slide_candidates_automatic.csv"), type=Path
     )
     parser.add_argument(
-        "--audit", default=Path("slide_term_occurrences.csv"), type=Path
+        "--audit", default=Path("slide_term_occurrences_automatic.csv"), type=Path
     )
     return parser.parse_args()
 
@@ -71,6 +72,11 @@ def load_candidates(path: Path) -> pd.DataFrame:
         raise ValueError("Candidate file contains no terms")
     if candidates["term_id"].isna().any() or candidates["term_id"].duplicated().any():
         raise ValueError("term_id must be non-empty and unique")
+
+    selected = pd.to_numeric(candidates["selected_in_glossary"], errors="raise")
+    if selected.isna().any() or not selected.isin([0, 1]).all():
+        raise ValueError("selected_in_glossary must contain only 0 or 1")
+    candidates["selected_in_glossary"] = selected.astype(int)
 
     if "aliases" not in candidates.columns:
         candidates.insert(2, "aliases", "")

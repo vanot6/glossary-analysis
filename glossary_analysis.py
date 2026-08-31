@@ -68,17 +68,18 @@ def load_and_validate(candidates_path: Path, qanda_path: Path) -> tuple[pd.DataF
     candidates["slide_dispersion"] = pd.to_numeric(
         candidates["slide_dispersion"], errors="raise"
     )
-    candidates["selected_in_glossary"] = pd.to_numeric(
-        candidates["selected_in_glossary"], errors="raise"
-    ).astype(int)
+    selected = pd.to_numeric(candidates["selected_in_glossary"], errors="raise")
     qanda["qanda_count"] = pd.to_numeric(qanda["qanda_count"], errors="raise")
 
-    if not candidates["selected_in_glossary"].isin([0, 1]).all():
+    if selected.isna().any() or not selected.isin([0, 1]).all():
         raise ValueError("selected_in_glossary must contain only 0 or 1")
+    candidates["selected_in_glossary"] = selected.astype(int)
+    if candidates[["slide_count", "slide_dispersion"]].isna().any().any():
+        raise ValueError("slide_count and slide_dispersion must not be blank")
     if (candidates[["slide_count", "slide_dispersion"]] < 0).any().any():
         raise ValueError("Slide counts cannot be negative")
-    if (qanda["qanda_count"] <= 0).any():
-        raise ValueError("Every Q&A row must have qanda_count > 0")
+    if qanda["qanda_count"].isna().any() or (qanda["qanda_count"] <= 0).any():
+        raise ValueError("Every Q&A row must have a positive qanda_count")
     if candidates["selected_in_glossary"].sum() == 0:
         raise ValueError("At least one candidate must be selected in the glossary")
 
@@ -153,31 +154,26 @@ def randomisation_test(
 
     counts = qanda_counts.reindex(pool, fill_value=0).to_numpy(dtype=float)
     total_types = int((qanda_counts > 0).sum())
-    total_tokens = float(qanda_counts.sum())
     selected = candidates["selected_in_glossary"].eq(1).to_numpy()
     observed_type = safe_ratio(((counts > 0) & selected).sum(), total_types)
-    observed_token = safe_ratio(counts[selected].sum(), total_tokens)
 
     # A fixed seed makes the 10,000 draws reproducible. Someone rerunning the
     # repository should get exactly the same baseline and p-value.
     rng = np.random.default_rng(seed)
     type_scores = np.empty(iterations)
-    token_scores = np.empty(iterations)
     for i in range(iterations):
         sample_idx = rng.choice(len(pool), size=n, replace=False)
         sample_counts = counts[sample_idx]
         type_scores[i] = safe_ratio((sample_counts > 0).sum(), total_types)
-        token_scores[i] = safe_ratio(sample_counts.sum(), total_tokens)
 
     results = pd.DataFrame(
         {
             "iteration": np.arange(1, iterations + 1),
             "type_coverage": type_scores,
-            "token_coverage": token_scores,
         }
     )
-    # The +1 correction prevents a Monte-Carlo p-value of exactly zero. It also
-    # treats the observed result as one member of the permutation distribution.
+    # The +1 correction prevents a Monte-Carlo p-value of exactly zero and keeps
+    # the simulated estimate conservative for a finite number of draws.
     stats = {
         "observed_type_coverage": observed_type,
         "random_mean_type_coverage": float(type_scores.mean()),
@@ -185,11 +181,13 @@ def randomisation_test(
         "type_coverage_p_one_sided": float(
             (1 + np.count_nonzero(type_scores >= observed_type)) / (iterations + 1)
         ),
-        "observed_token_coverage": observed_token,
-        "random_mean_token_coverage": float(token_scores.mean()),
-        "token_coverage_advantage": float(observed_token - token_scores.mean()),
-        "token_coverage_p_one_sided": float(
-            (1 + np.count_nonzero(token_scores >= observed_token)) / (iterations + 1)
+        "type_coverage_percentile_rank": float(
+            100
+            * (
+                np.count_nonzero(type_scores < observed_type)
+                + 0.5 * np.count_nonzero(type_scores == observed_type)
+            )
+            / iterations
         ),
     }
     return results, stats
@@ -200,31 +198,28 @@ def salience_correlations(candidates: pd.DataFrame, qanda_counts: pd.Series) -> 
     # Spearman's rho is therefore a better fit here than Pearson correlation.
     c = candidates.copy()
     c["qanda_count"] = c["term_id"].map(qanda_counts).fillna(0)
-    output: dict[str, float] = {}
-    for variable in ("slide_count", "slide_dispersion"):
-        rho, p = spearmanr(c[variable], c["qanda_count"])
-        output[f"spearman_{variable}_rho"] = float(rho)
-        output[f"spearman_{variable}_p_two_sided"] = float(p)
-    return output
+    rho, p = spearmanr(c["slide_dispersion"], c["qanda_count"])
+    return {
+        "spearman_slide_dispersion_rho": float(rho),
+        "spearman_slide_dispersion_p_two_sided": float(p),
+    }
 
 
 def plot_randomisation(
     permutations: pd.DataFrame, stats: dict[str, float], outdir: Path
 ) -> None:
-    # I keep type and token coverage side by side: the first shows lexical
-    # breadth, while the second gives repeated terms more weight.
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.5))
-    for ax, metric, observed_key, title in (
-        (axes[0], "type_coverage", "observed_type_coverage", "Type coverage"),
-        (axes[1], "token_coverage", "observed_token_coverage", "Token coverage"),
-    ):
-        ax.hist(permutations[metric], bins=30, color="#5B8FF9", edgecolor="white")
-        ax.axvline(stats[observed_key], color="#C33C54", linewidth=2.5, label="Expert glossary")
-        ax.set_title(title)
-        ax.set_xlabel("Coverage")
-        ax.set_ylabel("Random glossaries")
-        ax.legend(frameon=False)
-    fig.suptitle("Randomisation baseline: equally sized slide-derived glossaries")
+    fig, ax = plt.subplots(figsize=(7, 4.5))
+    ax.hist(permutations["type_coverage"], bins=30, color="#5B8FF9", edgecolor="white")
+    ax.axvline(
+        stats["observed_type_coverage"],
+        color="#C33C54",
+        linewidth=2.5,
+        label="Expert glossary",
+    )
+    ax.set_title("Randomisation baseline: Q&A type coverage")
+    ax.set_xlabel("Type coverage")
+    ax.set_ylabel("Random glossaries")
+    ax.legend(frameon=False)
     fig.tight_layout()
     fig.savefig(outdir / "fig_randomisation.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
