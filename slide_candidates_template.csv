@@ -1,5 +1,99 @@
 term_id,canonical_term,aliases,slide_count,slide_dispersion,selected_in_glossary
-qmsr,Quality Management System Regulation,QMSR,,,1
-iso_13485,ISO 13485,ISO 13485:2016,,,1
-finished_device,finished device,finished devices,,,0
-control_records,control of records,,,,0
+fda,U.S. Food and Drug Administration,FDA,,,1
+qmsr,Quality Management System Regulation,QMSR,,,0
+final_rule,final rule,,,,1
+quality_system_regulation,Quality System Regulation,Quality System regulation,,,0
+international_consensus_standard,international consensus standard,,,,0
+device,device,devices,,,0
+incorporation_by_reference,incorporation by reference,incorporates by reference,,,0
+iso_13485_2016,ISO 13485:2016,ISO 13485: 2016|ISO 13485:2016 (E)|ISO 13485: 2016 (E)|ISO 13485,,,0
+clause_3_iso_9000_2015,Clause 3 of ISO 9000:2015,Clause 3 of ISO 9000:2015(E)|Clause 3 of ISO 9000,,,0
+hierarchy_of_definitions,hierarchy of definitions,,,,0
+fda_regulation,FDA regulation,FDA regulations,,,0
+policy,policy,policies,,,0
+procedure,procedure,procedures,,,0
+inspection_process,inspection process,,,,1
+rulemaking,rulemaking,,,,0
+compliance_program,Compliance Program,Compliance Programs,,,1
+guidance_document,Guidance Document,Guidance Documents,,,1
+standard_operating_procedure,Standard Operating Procedure,Standard Operating Procedures,,,1
+work_instruction,Work Instruction,Work Instructions,,,1
+template,template,templates,,,0
+finished_device,finished device,finished devices,,,1
+finished_device_intended_for_human_use,finished device intended for human use,all finished devices intended for human use|finished devices intended for human use|all finished devices intended for humans|finished devices intended for humans,,,0
+manufacturer,manufacturer,manufacturers,,,0
+contract_sterilization,contract sterilization,,,,1
+installation,installation,,,,1
+relabeling,relabeling,,,,1
+specification_development,specification development,,,,1
+section_820_1_scope,21 CFR 820.1 (Scope),820.1: Scope|820.1 Scope,,,0
+section_820_3_definitions,21 CFR 820.3 (Definitions),820.3: Definitions|820.3 Definitions,,,0
+section_820_7_incorporation_by_reference,21 CFR 820.7 (Incorporation by reference),820.7: Incorporation by reference|820.7 Incorporation by reference,,,0
+section_820_10_qms_requirements,21 CFR 820.10 (Requirements for a quality management system),820.10 Requirements for a quality management system|820.10: Requirements for a quality management system,,,0
+section_820_35_control_of_records,21 CFR 820.35 (Control of records),820.35 Control of records|820.35: Control of records,,,0
+section_820_45_labeling_packaging_controls,21 CFR 820.45 (Device labeling and packaging controls),820.45 Device labeling and packaging controls|820.45: Device labeling and packaging controls|820.45 Device labelling and packaging controls|Device labeling and packaging controls|Device labelling and packaging controls,,,1
+quality_management_system,quality management system,quality management systems,,,0
+applicability_of_qmsr,applicability of the QMSR,applicability of QMSR,,,0
+conflicts_under_fdc_act,conflicts with other requirements under the FD&C Act,,,,1
+fdc_act,FD&C Act,Federal Food Drug and Cosmetic Act,,,0
+foreign_manufacturer,foreign manufacturer,foreign manufacturers,,,1
+exemption,exemption,exemptions,,,1
+variance,variance,variances,,,1
+facilities_and_controls,facilities and controls,,,,1
+design,design,,,,1
+manufacture,manufacture,,,,0
+packaging,packaging,,,,0
+labeling,labeling,labelling,,,1
+storage,storage,,,,1
+servicing,servicing,,,,0
+applicable_requirements_and_specifications,applicable requirements and specifications,requirements and specifications,,,0
+safe_and_effective,safe and effective,,,,0
+applicable_regulatory_requirements,applicable regulatory requirements,regulatory requirements,,,0
+part_830,21 CFR Part 830,830,,,0
+unique_device_identification_system,Unique Device Identification System,Unique Device Identification|UDI System|UDI,,,1
+part_821,21 CFR Part 821,821,,,0
+medical_device_tracking,Medical Device Tracking Requirements,Medical Device Tracking,,,1
+part_803,21 CFR Part 803,803,,,0
+medical_device_reporting,Medical Device Reporting,MDR,,,1
+part_806,21 CFR Part 806,806,,,0
+reports_of_corrections_and_removals,Medical Devices; Reports of Corrections and Removals,Reports of Corrections and Removals,,,1
+design_and_development_requirements,design and development requirements,design and development,,,0
+clause_7_3_iso_13485,Clause 7.3 of ISO 13485:2016,Clause 7.3 in ISO 13485:2016,,,0
+traceability_for_implantable_devices,traceability for implantable devices,,,,0
+clause_7_5_9_2_iso_13485,Clause 7.5.9.2 of ISO 13485:2016,Clause 7.5.9.2 in ISO 13485:2016,,,0
+adulterated_device,adulterated device,adulterated devices,,,0
+adulteration,adulteration,,,,1
+regulatory_action,regulatory action,regulatory actions,,,0
+clause_4_2_5_iso_13485,Clause 4.2.5 of ISO 13485,"ISO 13485 Clause 4.2.5|ISO 13485: Clause 4.2.5|ISO 13485, Clause 4.2.5",,,0
+control_of_production_and_service_provision,control of production and service provision,,,,0
+clause_7_5_1_iso_13485,Clause 7.5.1 of ISO 13485,"ISO 13485 Clause 7.5.1|ISO 13485: Clause 7.5.1|ISO 13485, Clause 7.5.1",,,0
+risk_management,risk management,,,,0
+risk_based_approach,risk-based approach,risk based approach,,,0
+risk_based_decision,risk-based decision,risk-based decisions|risk based decision|risk based decisions,,,0
+start_here_the_basics,Start Here/The Basics!,Start Here / The Basics,,,0
+small_business_program,Small Business Program,,,,0
+registration_and_listing,Registration and Listing,,,,0
+study_and_market_your_device,Study and Market Your Device,,,,0
+section_510k,510(k),,,,0
+ide,IDE,,,,0
+pma,PMA,,,,0
+hud,HUD,,,,0
+hde,HDE,,,,0
+q_submissions,Q-Submissions,Q-Submission|Q Submissions|Q Submission,,,0
+standards,standards,standard,,,0
+classification,classification,,,,0
+postmarket_activities,Postmarket Activities,post-market activities,,,0
+quality_system,quality system,quality systems,,,0
+exporting,exporting,,,,0
+device_recall,device recall,device recalls,,,1
+inspection,inspection,inspections,,,0
+global_harmonization,global harmonization,global harmonisation,,,0
+in_vitro_diagnostics,In Vitro Diagnostics,IVD,,,1
+ivd_development,IVD Development,In Vitro Diagnostics Development,,,0
+clia,CLIA,,,,1
+virtual_town_hall_series,Virtual Town Hall Series,,,,0
+specialty_technical_topics,Specialty Technical Topics,,,,0
+radiation_emitting_products,Radiation-Emitting Products,Radiation Emitting Products,,,0
+third_party_review_program,510(k) Third Party Review Program,Third Party Review Program,,,0
+third_party_review_organization,Third Party Review Organization,Third Party Review Organizations,,,0
+industry_basics_workshop_series,Industry Basics Workshop Series,Industry Basics Workshop,,,0

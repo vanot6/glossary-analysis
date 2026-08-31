@@ -1,5 +1,115 @@
 term_id,canonical_term,qanda_count,asr_verified
-qmsr,Quality Management System Regulation,7,yes
-iso_13485,ISO 13485,5,yes
-finished_device,finished device,2,yes
-manufacturer_inspection,manufacturer inspection,3,yes
+incorporation_by_reference_portal,incorporation by reference portal,1,yes
+medical_devices_qsr_amendments,Medical Devices; Quality System Regulation Amendments,3,yes
+medical_devices_qmsr_amendments,Medical Devices; Quality Management System Regulation Technical Amendments,2,yes
+iso_13485_certification,ISO 13485 certification,4,yes
+compliance_assessment,compliance assessment,1,yes
+certificate_of_conformity,certificate of conformity,1,yes
+exemption,exemption,3,yes
+classification,classification,1,yes
+voluntary_standard,voluntary standard,1,yes
+standard_revision,standard revision,3,yes
+regulatory_amendment,regulatory amendment,3,yes
+labeling_requirement,labeling requirement,1,yes
+packaging_requirement,packaging requirement,1,yes
+storage_instruction,storage instruction,1,yes
+handling_instruction,handling instruction,1,yes
+processing_instruction,processing instruction,1,yes
+labeling_accuracy,labeling accuracy,1,yes
+packaging_operation,packaging operation,1,yes
+labeling_packaging_inspection,inspection of labeling and packaging,3,yes
+labeling_release,labeling release,2,yes
+manual_inspection,manual inspection,1,yes
+automated_method,automated method,1,yes
+automated_reader,automated reader,2,yes
+human_oversight,human oversight,1,yes
+designated_individual,designated individual,1,yes
+representative_sampling,representative sampling,1,yes
+inspection_medical_device_manufacturers,Inspection of Medical Device Manufacturers,1,yes
+combination_product,combination product,3,yes
+good_manufacturing_practice,good manufacturing practice (GMP),1,yes
+manufacturing_process,manufacturing process,2,yes
+batch_or_lot,batch or lot,5,yes
+clause_7_5_1_iso_13485,Clause 7.5.1 of ISO 13485,1,yes
+clause_7_5_8_iso_13485,Clause 7.5.8 of ISO 13485,1,yes
+clause_7_5_9_iso_13485,Clause 7.5.9 of ISO 13485,1,yes
+staff_training,staff training,1,yes
+section_820_180,21 CFR 820.180,3,yes
+section_820_198,21 CFR 820.198,3,yes
+complaint_file,complaint file,1,yes
+complaint_record,complaint record,1,yes
+section_820_35_a,21 CFR 820.35(a),1,yes
+clause_8_2_2_iso_13485,Clause 8.2.2 of ISO 13485,1,yes
+response_to_comment_29,response to Comment 29,1,yes
+section_820_3_m,21 CFR 820.3(m),1,yes
+ide,IDE,4,yes
+part_812,21 CFR Part 812,2,yes
+design_controls,design controls,2,yes
+section_820_10_c,21 CFR 820.10(c),1,yes
+clause_7_3_iso_13485,Clause 7.3 of ISO 13485:2016,1,yes
+section_820_35_control_of_records,21 CFR 820.35 (Control of records),3,yes
+section_820_45_labeling_packaging_controls,21 CFR 820.45 (Device labeling and packaging controls),1,yes
+section_820_3_definitions,21 CFR 820.3 (Definitions),1,yes
+unique_device_identification_system,Unique Device Identification System,4,yes
+universal_product_code,Universal Product Code (UPC),2,yes
+design_and_development_requirements,design and development requirements,2,yes
+inspection_process,inspection process,6,yes
+quality_system_inspection_technique,Quality System Inspection Technique (QSIT),3,yes
+quality_system_regulation,Quality System Regulation,8,yes
+quality_management_system,quality management system,4,yes
+iso_13485_2016,ISO 13485:2016,15,yes
+clause_3_iso_9000_2015,Clause 3 of ISO 9000:2015,2,yes
+iso_9000_2015,ISO 9000:2015,3,yes
+incorporation_by_reference,incorporation by reference,5,yes
+final_rule,final rule,6,yes
+federal_register,Federal Register,3,yes
+effective_date,effective date,7,yes
+enforcement,enforcement,2,yes
+qmsr,Quality Management System Regulation,44,yes
+navigating_qmsr,Navigating the Quality Management System Regulation,1,yes
+medical_device,medical device,1,yes
+device,device,3,yes
+manufacturer,manufacturer,9,yes
+fdc_act,FD&C Act,1,yes
+applicable_provision,applicable provision,1,yes
+implementing_regulation,implementing regulation,1,yes
+fda_inspection,FDA inspection,1,yes
+fda,U.S. Food and Drug Administration,20,yes
+code_of_federal_regulations,Code of Federal Regulations (CFR),5,yes
+standards,standards,7,yes
+rulemaking,rulemaking,2,yes
+iso_14971,ISO 14971,1,yes
+preamble,preamble,3,yes
+codified_regulation,codified regulation,1,yes
+part_820,21 CFR Part 820,1,yes
+inspection,inspection,3,yes
+label,label,2,yes
+labeling,labeling,3,yes
+packaging,packaging,2,yes
+expiration_date,expiration date,1,yes
+procedure,procedure,4,yes
+process,process,4,yes
+labeling_packaging_mix_up,labeling and packaging mix-up,1,yes
+reserved,reserved,5,yes
+placeholder_term,placeholder term,1,yes
+regulatory_information,regulatory information,1,yes
+compliance_program,Compliance Program,4,yes
+cdrh,Center for Devices and Radiological Health (CDRH),2,yes
+dice,Division of Industry and Consumer Education (DICE),1,yes
+conforming_edit,conforming edit,1,yes
+part_4,21 CFR Part 4,2,yes
+device_type,device type,1,yes
+device_risk,device risk,1,yes
+device_complexity,device complexity,1,yes
+identifying_information,identifying information,1,yes
+traceability,traceability,1,yes
+accountability,accountability,1,yes
+regulatory_change,regulatory change,2,yes
+gap_analysis,gap analysis,2,yes
+complaint_handling,complaint handling,1,yes
+record,record,3,yes
+quality_system,quality system,1,yes
+compliance,compliance,8,yes
+gap,gap,1,yes
+administrative_error,administrative error,1,yes
+technical_correction,technical correction,2,yes
