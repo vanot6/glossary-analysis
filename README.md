@@ -1,78 +1,63 @@
-# Glossary coverage analysis
+# RSI glossary coverage analysis
 
-This repository contains the scripts and data tables used for a corpus-based
-case study of terminology preparation for remote simultaneous interpreting.
-The material is an FDA webinar on the Quality Management System Regulation
-(QMSR).
+This small utility evaluates a **manually compiled, frozen glossary** against a
+**manually annotated Q&A transcript**. It does not extract terms and does not
+change the glossary after the Q&A has been inspected.
 
-The study compares a glossary prepared from the official slides with the
-terminology later used in the moderated Q&A. It asks two related questions:
+## Research logic
 
-1. How much of the Q&A terminology was available in the slides?
-2. Did the manually selected glossary cover more terminology than an equally
-   sized random selection from the same slides?
+The script reports:
 
-## Files
+- Q&A term-type coverage;
+- frequency-weighted Q&A token coverage;
+- glossary utilisation;
+- the maximum coverage permitted by the supplied slides (material ceiling);
+- selection efficiency within that ceiling;
+- a one-sided Monte-Carlo randomisation test comparing the expert glossary with
+  10,000 equally sized random glossaries drawn from the same slide candidate pool;
+- exploratory Spearman correlations between slide prominence and Q&A frequency.
 
-- `count_slide_terms.py` counts predefined term families in the slide PDF;
-- `glossary_analysis.py` calculates coverage, runs the randomisation test and
-  creates the graphs;
-- `slide_candidates_template.csv` contains the slide-derived candidate list;
-- `qanda_terms_template.csv` contains the terms identified in the Q&A.
+The randomisation null hypothesis is: **expert selection has no greater Q&A
+coverage than a random selection of the same number of eligible slide-derived
+terms**.
 
-The scripts do not select or extract terminology. The candidate list and the
-Q&A term list are prepared manually and kept as part of the research record.
+## Input files
 
-## Preparing the data
+Use the two included templates. `term_id` must be a stable identifier shared by
+both tables. Full forms, acronyms, singular/plural forms and spelling variants
+should be assigned to the same `term_id` according to a rule fixed before the
+analysis.
 
-The slide candidate list is completed first, using only the official slides.
-`aliases` contains alternative forms separated by `|`; full forms, acronyms and
-transparent variants share one `term_id`. `selected_in_glossary` is `1` for an
-entry included in the working glossary and `0` otherwise.
+`slide_candidates.csv` contains every eligible slide-derived term family, not
+only the selected glossary entries. Set `selected_in_glossary` to 1 for the
+frozen expert glossary and 0 otherwise.
 
-`count_slide_terms.py` then reads the PDF page by page. Matching is
-case-insensitive and treats spaces and hyphens flexibly, which helps with PDF
-line breaks. It writes both the total frequency (`slide_count`) and the number
-of slides containing the term (`slide_dispersion`). A separate audit file lists
-the positive counts by page, so questionable matches can be checked manually.
+`qanda_terms.csv` contains every specialised term family occurring in the Q&A,
+including terms absent from the slides. Check uncertain ASR forms against the
+audio and document corrections separately; do not use an edited official
+transcript as the reference.
+
+## Installation and execution
 
 ```bash
-python count_slide_terms.py \
-  --slides fda_qmsr_slides.pdf \
+python -m pip install -r requirements.txt
+python rsi_glossary_analysis.py \
   --candidates slide_candidates_template.csv \
-  --output slide_candidates_counted.csv \
-  --audit slide_term_occurrences.csv
-```
-
-After the slide list has been frozen, the Q&A is annotated without consulting
-it. The YouTube automatic transcript is used as a working text, but doubtful
-forms are checked against the recording. The official edited transcript is not
-used.
-
-## Running the analysis
-
-The project uses Python 3 and the packages listed in `requirements.txt`.
-
-```bash
-pip install -r requirements.txt
-
-python glossary_analysis.py \
-  --candidates slide_candidates_counted.csv \
   --qanda qanda_terms_template.csv \
   --outdir analysis_output \
   --iterations 10000 \
   --seed 2026
 ```
 
-The main outputs are type and token coverage, glossary utilisation, material
-ceiling and selection efficiency. The randomisation test compares the observed
-glossary with 10,000 random glossaries of the same size. The script also reports
-Spearman correlations between term prominence in the slides and frequency in
-the Q&A.
+Replace the example rows in the templates before analysing the study data.
 
-`term_level_joined.csv` is saved together with the summary and graphs. I kept
-this table because it makes it possible to trace a surprising result back to
-the individual term rather than relying only on the final percentages.
+## Outputs
 
-This is a single-event case study. It evaluates one set of advance materials
-and one glossary; it does not measure interpreting quality or cognitive load.
+- `summary.csv` and `summary.json`: overall metrics, effect sizes and p-values;
+- `term_level_joined.csv`: auditable joined data;
+- `permutation_results.csv`: all randomisation scores;
+- `fig_randomisation.png`: null distributions and observed scores;
+- `fig_salience_scatter.png`: slide dispersion versus Q&A frequency.
+
+This is a single-event case study. The results describe this FDA webinar and do
+not establish effects on interpreting quality, cognitive load or all RSI events.
